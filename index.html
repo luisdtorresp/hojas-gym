@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Test - Formulario Bootstrap</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+  </head>
+  <body>
+    <style>
+      body{
+        background: #eee;
+      }
+    </style>
+    <!-- Start your project here-->
+    <div class="container">
+      <div class="d-flex justify-content-center align-items-center" style="height: 100vh">
+        <div class="text-center">
+          <img
+            class="mb-4"
+            src="https://4.bp.blogspot.com/-OwuX04K5ZGc/YK6ThGqPj6I/AAAAAAAADGg/XZaLsnkVJT0Rtzs4Sai8p8WHM-1s-q2UgCK4BGAYYCw/s1600/Gym%2BMontaje-Arbol%2BVF1.jpg"
+            style="width: 60vw; max-width: 90%; height:auto; border-radius: 2rem;"
+          />
+          <h5 class="mb-3">
+            Hojas Gimnasio y Más, tiene por misión desarrollar los conocimientos 
+            y  habilidades psicológicas y físicas de las personas
+          </h5>
+          <a
+            class="btn btn-primary btn-lg m-3"
+            href="#Evaluacion-antropometrica"
+            target=""
+            role="button"
+            >Evaluacion Antropometrica</a
+          >
+          <a
+            class="btn btn-primary btn-lg m-3"
+            href="#"
+            target="_blank"
+            role="button"
+            >Plan Grafico de Entrenamiento</a
+          >
+        </div>
+      </div>
+      <div id="Evaluacion-antropometrica" class="d-flex justify-content-center align-items-center m-2" style="min-height: 100vh">
+        <div class="container text-center">
+          <h2 class="display-3 p-1 mb-5">Evaluación Antropométrica</h2>
+          <div class="row">
+            <div class="col-md-6">
+              <div id="Datos-basicos" class="card">
+                <div class="card-header">
+                  <h3 class="card-title text-start">Datos Básicos</h3>
+                </div>
+                <div class="card-body">
+                  <div class="row mb-4">
+                    <div class="col">
+                      <div class="form-outline">
+                        <input type="text" id="datos-nombre" class="form-control" />
+                        <label class="form-label" for="datos-nombre">Nombres</label>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="form-outline">
+                        <input type="text" id="datos-apellidos" class="form-control" />
+                        <label class="form-label" for="datos-apellidos">Apellidos</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mb-4">
+                    <div class="col">
+                      <div class="form-outline">
+                        <input type="text" id="datos-pais" class="form-control" />
+                        <label class="form-label" for="datos-pais">Pais</label>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="form-outline">
+                        <input type="text" id="datos-estado" class="form-control" />
+                        <label class="form-label" for="datos-estado">Estado/Provincia</label>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="form-outline">
+                        <input type="text" id="datos-ciudad" class="form-control" />
+                        <label class="form-label" for="datos-ciudad">Ciudad</label>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="row mb-4">
+                    <div class="col">
+                      <div class="form-outline">
+                        <input class="form-control" type="date" name="" id="datos-fechanacimiento">
+                        <label class="form-label" for="datos-fechanacimiento">Fecha de Nacimiento</label>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="input-group flex-nowrap">
+                        <span class="input-group-text">Edad</span>
+                        <input class="form-control" type="input" name="" id="datos-edad" disabled value="24">
+                        
+                      </div>
+                      
+                    </div>
+                    <div class="col-md-4">
+                      <div class="input-group text-center flex-md-nowrap" style="justify-content: space-between;">
+                        <span class="input-group-text ">Sexo</span>
+                        <div class="form-check form-check-inline ms-2">
+                          <input class="form-check-input" type="radio" name="datos-sexo" id="datos-masculino" value="masculino" />
+                          <label class="form-check-label" for="datos-masculino">M</label>
+                        </div>
+                        
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="datos-sexo" id="datos-femenino" value="femenino" />
+                          <label class="form-check-label" for="datos-femenino">F</label>
+                        </div>
+                      </div>                    
+                  
+                    </div>
+                  </div>
+                  <div class="row mb-4">
+                    <div class="col-md-6 mb-4">
+                      <div class="input-group flex-nowrap">
+                        <div class="form-outline">
+                          <input class="form-control" type="text" name="" id="datos-masacorporal">
+                          <label class="form-label" for="datos-fechanacimiento">Masa corporal</label>
+                        </div>
+                        <span class="input-group-text">Kg</span>
+                      
+                      </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                      <div class="input-group flex-nowrap">
+                        <div class="form-outline">
+                          <input class="form-control" type="text" name="" id="datos-estatura">
+                          <label class="form-label" for="datos-estatura">Estatura</label>
+                        </div>
+                        <span class="input-group-text">cm</span>
+                      
+                      </div>
+                    </div>
+                    
+    
+                  </div>
+    
+                  <div class="row mb-4">
+                    <div class="col-md-6 mb-4">
+    
+                      <div class="input-group flex-nowrap">
+                        <span class="input-group-text border-0" >Condicion Fisica:</span>
+                        
+                        <select class="form-control form-select" name="" id="datos-condicionfisica">
+                          <option value="Sedentario">Sedentario</option>
+                          <option value="Practicante">Practicante</option>
+                          <option value="Deportista">Deportista</option>
+                        </select>                    
+                      </div>
+                    </div>         
+                    <div class="col-md-6">
+    
+                      <div class="input-group flex-nowrap">
+                        <span class="input-group-text border-0" >Deporte:</span>
+                        <!-- Pendiente generar opciones dinamicamente -->
+                        <select class="form-control form-select" name="" id="datos-deporte">
+                          <option value="Ninguno" selected > Ninguno</option>
+                          <option value="Beisbol">Beisbol / Softbol</option>
+                          <option value="Baloncesto">Baloncesto</option>
+                          <option value="Culturismo">Culturismo</option>
+                          <option value="Ciclismo">Ciclismo</option>
+                          <option value="Esgrima">Esgrima</option>
+                          <option value="Gimnasia">Gimnasia</option>
+                          <option value="Futbol">Futbol</option>
+                          <option value="Natacion">Natacion</option>
+                          <option value="Tenis pista y campo">Tenis pista y campo</option>
+                          <option value="Pruebas de carrera">Pruebas de carrera</option>
+                          <option value="Voleibol">Voleibol</option>
+                          <option value="Levantamiento de Pesas">Levantamiento de Pesas</option>
+    
+    
+                        </select>                    
+                      </div>
+                    </div>         
+                  </div>
+                  <div class="row mb-4">
+                    
+                    <div class="col-md-8 mb-4">
+                      <div class="input-group text-center flex-nowrap" style="justify-content: space-between;">
+                        <span class="input-group-text ">Medicion</span>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="datos-tipomedicion" id="datos-perimetros" value="perimetros" />
+                          <label class="form-check-label" for="datos-perimetros">Solo Perimetros</label>
+                        </div>
+                        <div class="form-check form-check-inline ms-2">
+                          <input class="form-check-input" type="radio" name="datos-tipomedicion" id="datos-pliegues" value="pliegues" />
+                          <label class="form-check-label" for="datos-pliegues">Con Pliegues</label>
+                        </div>
+                        
+                      </div>                    
+                  
+                    </div>
+                    <div class="col-md-4 mb-4">
+                      <p class="note note-info">
+                        El pliegue abdominal debe ser tomado a <span id="pliegue">{value}</span><strong>cm</strong> del ombligo
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div id="Mediciones" class="card h-100">
+                <div class="card-header">
+                  <h3 class="card-title ">Mediciones</h3>
+                </div>
+                <div class="card-body">
+                  <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headiBásicasngOne">
+                        <button class="accordion-button" type="button" data-mdb-toggle="collapse"
+                          data-mdb-target="#MedicionesBasicas" aria-expanded="true" aria-controls="MedicionesBasicas">
+                          Básicas
+                        </button>
+                      </h2>
+                      <div id="MedicionesBasicas" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+                        <div class="accordion-body">
+                          <div class="row mb-2">
+                            <div class="col-md-6 mb-2">
+                              <div class="input-group flex-nowrap">
+                                <div class="form-outline">
+                                  <input class="form-control" type="text" name="" id="datos-tallasentado">
+                                  <label class="form-label" for="datos-tallasentado">Talla Sentado</label>
+                                </div>
+                                <span class="input-group-text">cm</span>
+                              
+                              </div>
+                            </div>
+                            
+                            <div class="col-md-6">
+                              <div class="input-group flex-nowrap">
+                                <div class="form-outline">
+                                  <input class="form-control" type="text" name="" id="datos-envergadura">
+                                  <label class="form-label" for="datos-envergadura">Envergadura</label>
+                                </div>
+                                <span class="input-group-text">cm</span>
+                              
+                              </div>
+                            </div>
+                            
+            
+                          </div>
+            
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+                          data-mdb-target="#Perimetros" aria-expanded="false"
+                          aria-controls="Perimetros">
+                          Perimetros
+                        </button>
+                      </h2>
+                      <div id="Perimetros" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+                        <div class="accordion-body">
+                          <div class="row mb-2">
+                            <div class="col-lg-6 mb-2 d-flex-nowrap">
+                              <div class="input-group flex-nowrap">
+                                <div class="form-outline">
+                                  <input class="form-control" type="text" name="" id="mediciones-cefalico">
+                                  <label class="form-label" for="mediciones-cefalico">Cefálico</label>
+                                </div>
+                                <span class="input-group-text">cm</span>
+                              
+                              </div>
+                            </div>
+                            <div class="col-lg-6 mb-2 d-flex-nowrap">
+                              <div class="input-group flex-nowrap">
+                                <div class="form-outline">
+                                  <input class="form-control" type="text" name="" id="mediciones-cuello">
+                                  <label class="form-label" for="mediciones-cuello">Cuello</label>
+                                </div>
+                                <span class="input-group-text">cm</span>
+                              
+                              </div>
+                            </div>
+                            
+                          </div>
+                          <div class="row mb-2">
+                            <div class="col-lg-6 mb-2">
+                              <div class="input-group flex-nowrap">
+                                <div class="form-outline">
+                                  <input class="form-control" type="text" name="" id="mediciones-brazorelajado">
+                                  <label class="form-label" for="mediciones-brazorelajado">Brazo Relajado</label>
+                                </div>
+                                <span class="input-group-text">cm</span>
+                              
+                              </div>
+                            </div>
+                            <div class="col-lg-6 mb-2">
+                              <div class="input-group flex-nowrap">
+                                <div class="form-outline">
+                                  <input class="form-control" type="text" name="" id="mediciones-antebrazo">
+                                  <label class="form-label" for="mediciones-antebrazo">Antebrazo</label>
+                                </div>
+                                <span class="input-group-text">cm</span>
+                              
+                              </div>
+                            </div>
+                            
+                            
+                            <div class="col-lg-6 mb-2">
+                              <div class="input-group flex-nowrap">
+                                <div class="form-outline">
+                                  <input class="form-control" type="text" name="" id="mediciones-muñeca">
+                                  <label class="form-label" for="mediciones-muñeca">Muñeca</label>
+                                </div>
+                                <span class="input-group-text">cm</span>
+                              
+                              </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                              <div class="input-group flex-nowrap">
+                                <div class="form-outline">
+                                  <input class="form-control" type="text" name="" id="mediciones-brazoflexionado">
+                                  <label class="form-label" for="mediciones-brazoflexionado">Brazo Flexionado</label>
+                                </div>
+                                <span class="input-group-text">cm</span>
+                              
+                              </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                              <div class="input-group flex-nowrap">
+                                <div class="form-outline">
+                                  <input class="form-control" type="text" name="" id="mediciones-torax">
+                                  <label class="form-label" for="mediciones-torax">Torax</label>
+                                </div>
+                                <span class="input-group-text">cm</span>
+                              
+                              </div>
+                            </div>
+                            
+            
+                          </div>
+                          <div class="row mb-2">
+                            <div class="col-lg-6 mb-2">
+                              <div class="input-group flex-nowrap">
+                                <div class="form-outline">
+                                  <input class="form-control" type="text" name="" id="mediciones-cintura">
+                                  <label class="form-label" for="mediciones-cintura">Cintura</label>
+                                </div>
+                                <span class="input-group-text">cm</span>
+                              
+                              </div>
+                            </div>
+                            <div class="col-lg-6 mb-2">
+                              <div class="input-group flex-nowrap">
+                                <div class="form-outline">
+                                  <input class="form-control" type="text" name="" id="mediciones-cadera">
+                                  <label class="form-label" for="mediciones-cadera">Cadera</label>
+                                </div>
+                                <span class="input-group-text">cm</span>
+                              
+                              </div>
+                            </div>
+                            
+                          </div>
+                          <div class="row mb-2">
+                            <div class="col-lg-6 mb-2">
+                              <div class="input-group flex-nowrap">
+                                <div class="form-outline">
+                                  <input class="form-control" type="text" name="" id="mediciones-muslosuperior">
+                                  <label class="form-label" for="mediciones-muslosuperior">Muslo Superior</label>
+                                </div>
+                                <span class="input-group-text">cm</span>
+                              
+                              </div>
+                            </div>
+                            <div class="col-lg-6 mb-2">
+                              <div class="input-group flex-nowrap">
+                                <div class="form-outline">
+                                  <input class="form-control" type="text" name="" id="mediciones-muslomedio">
+                                  <label class="form-label" for="mediciones-muslomedio">Muslo Medio</label>
+                                </div>
+                                <span class="input-group-text">cm</span>
+                              
+                              </div>
+                            </div>
+                            
+                            
+                            <div class="col-lg-6">
+                              <div class="input-group flex-nowrap">
+                                <div class="form-outline">
+                                  <input class="form-control" type="text" name="" id="mediciones-pantorrilla">
+                                  <label class="form-label" for="mediciones-pantorrilla">Pantorrilla</label>
+                                </div>
+                                <span class="input-group-text">cm</span>
+                              
+                              </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                              <div class="input-group flex-nowrap">
+                                <div class="form-outline">
+                                  <input class="form-control" type="text" name="" id="mediciones-tobillo">
+                                  <label class="form-label" for="mediciones-tobillo">Tobillo</label>
+                                </div>
+                                <span class="input-group-text">cm</span>
+                              
+                              </div>
+                            </div>
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+                          data-mdb-target="#Paniculos" aria-expanded="false"
+                          aria-controls="Paniculos">
+                          Paniculos
+                        </button>
+                      </h2>
+                      <div id="Paniculos" class="accordion-collapse collapse" aria-labelledby="headingThree">
+                        <div class="accordion-body">
+                          <div class="row mb-2">
+                            <div class="col-lg-6 mb-2 d-flex-nowrap">
+                              <div class="input-group flex-nowrap">
+                                <div class="form-outline">
+                                  <input class="form-control" type="text" name="" id="mediciones-triceps">
+                                  <label class="form-label" for="mediciones-triceps">Triceps</label>
+                                </div>
+                                <span class="input-group-text">cm</span>
+                              
+                              </div>
+                            </div>
+                            <div class="col-lg-6 mb-2 d-flex-nowrap">
+                              <div class="input-group flex-nowrap">
+                                <div class="form-outline">
+                                  <input class="form-control" type="text" name="" id="mediciones-subescapular">
+                                  <label class="form-label" for="mediciones-subescapular">Subescapular</label>
+                                </div>
+                                <span class="input-group-text">cm</span>
+                              
+                              </div>
+                            </div>
+                            
+                          </div>
+                          <div class="row mb-2">
+                            <div class="col-lg-6 mb-2">
+                              <div class="input-group flex-nowrap">
+                                <div class="form-outline">
+                                  <input class="form-control" type="text" name="" id="mediciones-biceps">
+                                  <label class="form-label" for="mediciones-biceps">Biceps</label>
+                                </div>
+                                <span class="input-group-text">cm</span>
+                              
+                              </div>
+                            </div>
+                            <div class="col-lg-6 mb-2">
+                              <div class="input-group flex-nowrap">
+                                <div class="form-outline">
+                                  <input class="form-control" type="text" name="" id="mediciones-crestailiaca">
+                                  <label class="form-label" for="mediciones-crestailiaca">Cresta Iliaca</label>
+                                </div>
+                                <span class="input-group-text">cm</span>
+                              
+                              </div>
+                            </div>
+                            
+                            
+                            <div class="col-lg-6 mb-2">
+                              <div class="input-group flex-nowrap">
+                                <div class="form-outline">
+                                  <input class="form-control" type="text" name="" id="mediciones-supraespinal">
+                                  <label class="form-label" for="mediciones-supraespinal">Supraespinal</label>
+                                </div>
+                                <span class="input-group-text">cm</span>
+                              
+                              </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                              <div class="input-group flex-nowrap">
+                                <div class="form-outline">
+                                  <input class="form-control" type="text" name="" id="mediciones-abdominal">
+                                  <label class="form-label" for="mediciones-abdominal">Abdominal</label>
+                                </div>
+                                <span class="input-group-text">cm</span>
+                              
+                              </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                              <div class="input-group flex-nowrap">
+                                <div class="form-outline">
+                                  <input class="form-control" type="text" name="" id="mediciones-muslo">
+                                  <label class="form-label" for="mediciones-muslo">Muslo</label>
+                                </div>
+                                <span class="input-group-text">cm</span>
+                              
+                              </div>
+                            </div>
+                            
+            
+                          </div>
+                          <div class="row mb-2">
+                            <div class="col-lg-6 mb-2">
+                              <div class="input-group flex-nowrap">
+                                <div class="form-outline">
+                                  <input class="form-control" type="text" name="" id="mediciones-paniculopantorrilla">
+                                  <label class="form-label" for="mediciones-paniculopantorrilla">Pantorrilla</label>
+                                </div>
+                                <span class="input-group-text">cm</span>
+                              
+                              </div>
+                            </div>
+                            <div class="col-lg-6 mb-2">
+                              <div class="input-group flex-nowrap">
+                                <div class="form-outline">
+                                  <input class="form-control" type="text" name="" id="mediciones-pectoral">
+                                  <label class="form-label" for="mediciones-pectoral">Pectoral</label>
+                                </div>
+                                <span class="input-group-text">cm</span>
+                              
+                              </div>
+                            </div>
+                            
+                          </div>
+                            
+                        </div>                    
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+                          data-mdb-target="#Longitudes" aria-expanded="false"
+                          aria-controls="Longitudes">
+                          Longitudes
+                        </button>
+                      </h2>
+                      <div id="Longitudes" class="accordion-collapse collapse" aria-labelledby="headingThree">
+                        <div class="accordion-body">
+                          <div class="row mb-2">
+                            <div class="col-lg-6 mb-2 d-flex-nowrap">
+                              <div class="input-group flex-nowrap">
+                                <div class="form-outline">
+                                  <input class="form-control" type="text" name="" id="mediciones-acromiale-radiale">
+                                  <label class="form-label" for="mediciones-acromiale-radiale">Acromiale - Radiale</label>
+                                </div>
+                                <span class="input-group-text">cm</span>
+                              
+                              </div>
+                            </div>
+                            <div class="col-lg-6 mb-2 d-flex-nowrap">
+                              <div class="input-group flex-nowrap">
+                                <div class="form-outline">
+                                  <input class="form-control" type="text" name="" id="mediciones-radiale-stylion">
+                                  <label class="form-label" for="mediciones-radiale-stylion">Radiale - Stylion</label>
+                                </div>
+                                <span class="input-group-text">cm</span>
+                              
+                              </div>
+                            </div>
+                            
+                          </div>
+                          <div class="row mb-2">
+                            <div class="col-lg-6 mb-2">
+                              <div class="input-group flex-nowrap">
+                                <div class="form-outline">
+                                  <input class="form-control" type="text" name="" id="mediciones-stylionmedio-dactylion">
+                                  <label class="form-label" for="mediciones-stylionmedio-dactylion">Stylion Medio - Dactylion</label>
+                                </div>
+                                <span class="input-group-text">cm</span>
+                              
+                              </div>
+                            </div>
+                            <div class="col-lg-6 mb-2">
+                              <div class="input-group flex-nowrap">
+                                <div class="form-outline">
+                                  <input class="form-control" type="text" name="" id="mediciones-alturailiospinale">
+                                  <label class="form-label" for="mediciones-alturailiospinale">Altura Iliospinale</label>
+                                </div>
+                                <span class="input-group-text">cm</span>
+                              
+                              </div>
+                            </div>
+                            
+                            
+                            <div class="col-lg-6 mb-2">
+                              <div class="input-group flex-nowrap">
+                                <div class="form-outline">
+                                  <input class="form-control" type="text" name="" id="mediciones-alturatrochaterion">
+                                  <label class="form-label" for="mediciones-alturatrochaterion">Altura Trochaterion</label>
+                                </div>
+                                <span class="input-group-text">cm</span>
+                              
+                              </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                              <div class="input-group flex-nowrap">
+                                <div class="form-outline">
+                                  <input class="form-control" type="text" name="" id="mediciones-trocantertibial-lateral">
+                                  <label class="form-label" for="mediciones-trocantertibial-lateral">Trocanter-Tibial-Lateral</label>
+                                </div>
+                                <span class="input-group-text">cm</span>
+                              
+                              </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                              <div class="input-group flex-nowrap">
+                                <div class="form-outline">
+                                  <input class="form-control" type="text" name="" id="mediciones-alturatibial-lateral">
+                                  <label class="form-label" for="mediciones-alturatibial-lateral">Altura Tibial Lateral</label>
+                                </div>
+                                <span class="input-group-text">cm</span>
+                              
+                              </div>
+                            </div>
+                            
+            
+                          </div>
+                          <div class="row mb-2">
+                            <div class="col-lg-6 mb-2">
+                              <div class="input-group flex-nowrap">
+                                <div class="form-outline">
+                                  <input class="form-control" type="text" name="" id="mediciones-pie">
+                                  <label class="form-label" for="mediciones-pie">Pie</label>
+                                </div>
+                                <span class="input-group-text">cm</span>
+                              
+                              </div>
+                            </div>
+                            <div class="col-lg-6 mb-2">
+                              <div class="input-group flex-nowrap">
+                                <div class="form-outline">
+                                  <input class="form-control" type="text" name="" id="mediciones-tibialmedial-sphyrion-tibiale">
+                                  <label class="form-label" for="mediciones-tibialmedial-sphyrion-tibiale">Tibial Medial-Sphyrion Tibiale</label>
+                                </div>
+                                <span class="input-group-text">cm</span>
+                              
+                              </div>
+                            </div>
+                            
+                          </div>
+                            
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item mb-4">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+                          data-mdb-target="#Diametros" aria-expanded="false"
+                          aria-controls="Diametros">
+                          Diametros
+                        </button>
+                      </h2>
+                      <div id="Diametros" class="accordion-collapse collapse" aria-labelledby="headingThree">
+                        <div class="accordion-body">
+                          <div class="accordion-body">
+                            <div class="row mb-2">
+                              <div class="col-lg-6 mb-2 d-flex-nowrap">
+                                <div class="input-group flex-nowrap">
+                                  <div class="form-outline">
+                                    <input class="form-control" type="text" name="" id="mediciones-biacromial">
+                                    <label class="form-label" for="mediciones-biacromial">Biacromial</label>
+                                  </div>
+                                  <span class="input-group-text">cm</span>
+                                
+                                </div>
+                              </div>
+                              <div class="col-lg-6 mb-2 d-flex-nowrap">
+                                <div class="input-group flex-nowrap">
+                                  <div class="form-outline">
+                                    <input class="form-control" type="text" name="" id="mediciones-anteroposteriorabdomen">
+                                    <label class="form-label" for="mediciones-anteroposteriorabdomen">Antero-Posterior del Abdomen</label>
+                                  </div>
+                                  <span class="input-group-text">cm</span>
+                                
+                                </div>
+                              </div>
+                              
+                            </div>
+                            <div class="row mb-2">
+                              <div class="col-lg-6 mb-2">
+                                <div class="input-group flex-nowrap">
+                                  <div class="form-outline">
+                                    <input class="form-control" type="text" name="" id="mediciones-biliocrestal">
+                                    <label class="form-label" for="mediciones-biliocrestal">Biliocrestal</label>
+                                  </div>
+                                  <span class="input-group-text">cm</span>
+                                
+                                </div>
+                              </div>
+                              <div class="col-lg-6 mb-2">
+                                <div class="input-group flex-nowrap">
+                                  <div class="form-outline">
+                                    <input class="form-control" type="text" name="" id="mediciones-transversotorax">
+                                    <label class="form-label" for="mediciones-transversotorax">Transverso Torax</label>
+                                  </div>
+                                  <span class="input-group-text">cm</span>
+                                
+                                </div>
+                              </div>
+                              
+                              <div class="col-lg-6">
+                                <div class="input-group flex-nowrap">
+                                  <div class="form-outline">
+                                    <input class="form-control" type="text" name="" id="mediciones-toraxanteroposterior">
+                                    <label class="form-label" for="mediciones-toraxanteroposterior">Torax Antero-Posterior</label>
+                                  </div>
+                                  <span class="input-group-text">cm</span>
+                                
+                                </div>
+                              </div>
+                              
+                              <div class="col-lg-6">
+                                <div class="input-group flex-nowrap">
+                                  <div class="form-outline">
+                                    <input class="form-control" type="text" name="" id="mediciones-humero">
+                                    <label class="form-label" for="mediciones-humero">Humero</label>
+                                  </div>
+                                  <span class="input-group-text">cm</span>
+                                
+                                </div>
+                              </div>
+                              
+              
+                            </div>
+                            <div class="row mb-2">
+                              <div class="col-lg-6 mb-2">
+                                <div class="input-group flex-nowrap">
+                                  <div class="form-outline">
+                                    <input class="form-control" type="text" name="" id="mediciones-biestiloideo">
+                                    <label class="form-label" for="mediciones-biestiloideo">Biestiloideo</label>
+                                  </div>
+                                  <span class="input-group-text">cm</span>
+                                
+                                </div>
+                              </div>
+                              <div class="col-lg-6 mb-2">
+                                <div class="input-group flex-nowrap">
+                                  <div class="form-outline">
+                                    <input class="form-control" type="text" name="" id="mediciones-femur">
+                                    <label class="form-label" for="mediciones-femur">Femur</label>
+                                  </div>
+                                  <span class="input-group-text">cm</span>
+                                
+                                </div>
+                              </div>
+                              <div class="col-lg-6 mb-2">
+                                <div class="input-group flex-nowrap">
+                                  <div class="form-outline">
+                                    <input class="form-control" type="text" name="" id="mediciones-bimaleolar">
+                                    <label class="form-label" for="mediciones-bimaleolar">Bimaleolar</label>
+                                  </div>
+                                  <span class="input-group-text">cm</span>
+                                
+                                </div>
+                              </div>
+                              
+                            </div>
+                              
+                          </div>
+                        </div>  
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div id="Calculos" class="card mt-5">
+                <div class="card-header">
+                  <h3 class="card-title ">Calculos</h3>
+                </div>
+                <div class="card-body">
+    
+                </div>
+                <div class="card-footer">
+    
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div id="Informe" class="card mt-5">
+                <div class="card-header">
+                  <h3 class="card-title ">Informe</h3>
+                </div>
+                <div class="card-body">
+    
+                </div>
+                <div class="card-footer">
+    
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          
+          
+        </div>
+      </div>
+      <hr>
+      <p class="mb-3">Desarrollado por Luis Torres</p>
+    </div>
+    <!-- End your project here-->
+
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript"></script>
+  </body>
+</html>
